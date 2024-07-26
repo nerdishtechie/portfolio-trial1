@@ -1,0 +1,531 @@
+
+
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+nav .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+
+nav {
+    background-color: grey;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0 20px;
+    color: #0c0c0c;
+}
+
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+}
+
+.one img {
+    border-radius: 50%;
+    height: 520px;
+    margin: 30px 0;
+}
+
+
+#typing {
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 75px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.three, .four {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+
+.three {
+    background-color: #28a745;
+}
+
+.three:hover {
+    background-color: #218838;
+}
+
+.four {
+    background-color: #dc3545;
+}
+
+.four:hover {
+    background-color: #c82333;
+}
+
+.four a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+section h1 {
+    font-size: 40px;
+    color: #007bff;
+}
+
+
+#about, #skills, #projects, #education, #achievements, #contact {
+    color: #007bff;
+    margin:20px;
+}
+
+.bio {
+    font-size: 30px;
+    color: #28a745;
+    text-align: justify;
+}
+
+
+
+
+.card img {
+    max-width: 150px;
+    margin: 20px;
+    max-height: 120px;
+    transition: transform 0.3s ease; 
+}
+
+.card img:hover {
+    transform: scale(1.1); 
+}
+
+
+.red {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white; 
+    transition: color 0.3s ease; 
+}
+
+.red:hover {
+    color: #007bff; 
+}
+#projects {
+  
+}
+
+#projects h1 {
+    
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+     margin: 10px 0 0 0;
+     flex-direction: row;
+     margin-left: 40px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    margin-top:20px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+}
+
+.project h3 {
+    margin-top: 15px;
+}
+
+.project p {
+    color: #555;
+    text-align: justify;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
+}
+.project p{
+    color:green;
+    font-weight:bold;
+}
+
+#about h1, #skills h1, #projects h1, #education h1, #achievements h1, #contact h1{
+    text-align: center;
+}
+#education {
+   
+}
+
+#education h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.education-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); 
+    text-align: center;
+}
+
+.education-item img {
+    max-width: 100%;
+    max-height: 350px;
+    border-radius: 8px;
+}
+
+.education-item h3 {
+    margin-top: 15px;
+}
+
+.education-item p {
+    color: green;
+    font-weight: bold;
+}
+#achievements {
+   
+}
+
+#achievements h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.achievement {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); 
+    text-align: center;
+}
+
+.achievement img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+}
+
+.achievement h3 {
+    margin-top: 15px;
+}
+
+.achievement p {
+    color: green;
+    font-weight: bold;
+
+}
+#contact {
+ 
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin:0  auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color:white;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#contactForm input[type="button"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+#contactForm input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+
+#userDetails {
+    margin-top: 20px;
+}
+#button{
+    background-color: #007BFF;
+    height:30px;
+    width:100px;
+   align-self: center;
+   border-radius: 5px;
+   color: #fff;
+   font-size: 15px;
+   cursor: pointer;
+ 
+}
+#button:hover{
+    background-color: #0056b3;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-media {
+    margin: 10px 0;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+#backToTop {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
+
+#backToTop:active {
+    transform: scale(0.95); 
+}
+main{
+    padding-top:60px;
+}
+
+section{
+   margin-top:40px;
+}
+/* Common container styles for desktop */
+.skills {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 20px; /* Space between items */
+    justify-content: space-between; /* Distribute space evenly */
+    max-width: 1200px; /* Adjust to fit your layout */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Flex item styles for desktop */
+.skill-card, .project, .education-item, .achievement {
+    flex: 1 1 calc(20% - 20px); /* Five items per row with gap adjustment */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    nav .hamburger {
+        display: block;
+       
+    }
+
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        width:100%;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    nav .menu.active {
+        display: flex;
+
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+    
+     .one{
+       
+        display:block;
+     }
+     #typing{
+        overflow:visible;
+        font-size: 35px;
+        margin-top:50px;
+        
+     }
+    body.menu-active{
+        margin-left: 20px;
+        margin-top: 800px;
+    }
+    nav{
+        margin-left: -20px;
+    }
+.one img{
+    max-width: 400px;
+    max-height: 400px;
+   
+}
+main.menu-active{
+    
+}
+#about h1{
+  text-align: center;
+  margin-top: -60px;
+   
+}
+.bio p{
+    max-width: 300px;
+    margin-right: -50px;
+    
+}
+section{
+    padding-left: 0;
+    margin-left:0;
+
+}
+#contact.menu-active{
+    margin-top: 40px;
+}
+.skills{
+    display:flex;
+    flex-wrap: wrap;
+   
+
+}
+.card{
+    flex: 1 1 100%;
+}
+.card img{
+    max-width: 100px;
+    border-radius:8px;
+}
+}
+ 
+ 
